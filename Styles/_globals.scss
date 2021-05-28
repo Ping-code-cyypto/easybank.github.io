@@ -1,0 +1,290 @@
+@import url('https://fonts.google.com/specimen/Public+Sans');
+@import '../mixins/repeatedcode';
+@import '../colors/colors';
+@import '../variables/variables';
+@import '../Responsiveness/mobileivew';
+@import '../Responsiveness/tablets';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'specimen', sans-serif;
+}
+
+
+*, *::before, *::after {
+            box-sizing: inherit;
+}
+
+html{
+    body{
+        #dadofallcontainers{
+            width: 100%;
+            margin: auto;
+            font-size: 18px;
+            font-weight: 300;
+                .navbar{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 20px;
+                    #links{
+                        @include flexforul;
+                            li{
+                                margin: 10px;
+                               a{
+                                    text-decoration: none;
+                                    color: $GrayishBlue;
+                                    text-underline-offset: 30px;
+                                    &:hover{
+                                        color: black;
+                                        text-decoration: underline;
+                                        transition-duration: 0.5s;
+                                    }
+                                    &:not(:hover){
+                                        color: $GrayishBlue;
+                                        transition-duration: 0.5s
+                                    }
+                                }
+                                
+                            }
+                    }
+                    .button{
+                        @include buttonstyle;
+                    }
+                }
+
+                #mainbody{
+                    .section1{
+                        display: flex;
+                        justify-content: center;
+                        background-color: $VeryLightGray;
+                        align-items: center;
+                        overflow: hidden;
+                        position: relative;
+                        .introinfo{
+                            height: fit-content;
+                            width: fit-content;
+                            padding: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: center;
+                                h1{
+                                    width: 350px;
+                                    font-size: 40px;
+                                    font-weight: 500;
+                                }
+                                p{
+                                    width: 400px;
+                                    font-size: 16px;
+                                    margin: 20px 0 20px 0;
+                                    opacity: 0.7;
+                                }
+                                .button{
+                                    width: fit-content;
+                                    @include buttonstyle;
+                                }
+                        }
+                        #overflow{ 
+                            margin-top: -200px;
+                            margin-right: -330px;   
+                        }
+                        #overflow2{
+                            position: absolute;  
+                            right: -100px; 
+                            height: fit-content;
+                            top: -100px;     
+                            width: fit-content;    
+                            #overflowmobile{
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+                        
+                    }
+                }
+
+                #section2{
+                    background-color: $LightGrayishBlue;
+                    padding: 70px 0 70px 0;
+                        .ninety{
+                            width: 85%;
+                            margin: auto;
+                                .intro{
+                                    width: 55%;
+                                        h1{
+                                            font-size: 40px;
+                                            font-weight: 500;
+                                        }
+                                        p{
+                                            margin: 20px 0 70px 0;
+                                        }
+                                }
+                            
+                                #featurecont{
+                                    display: grid;
+                                    grid-template-columns: auto auto auto auto;
+                                    grid-column-gap: 15px;
+                                    div{
+                                        h3{
+                                            margin: 20px 0 20px 0;
+                                            font-weight: 500;
+                                        }
+                                        p{
+                                            opacity: 0.7;
+                                            line-height: 26px;
+                                        }
+                                      
+                                    }
+                                }
+                        }
+                }
+
+                #section3{
+                    // background-color: blue;
+                    width: 100%;
+                    margin: 70px 0 70px 0;
+                    #seventy{
+                        width: 85%;
+                        margin: auto;
+                        // background-color: brown;
+                    }
+                        .article{
+                            width: fit-content;
+                            // background-color: blueviolet;
+                            
+                                p{
+                                    font-size: 30px;
+                                    margin-bottom: 50px;
+                                }
+                        }
+                        .gridcontainer{
+                            display: grid;
+                            grid-template-columns: auto auto auto auto;
+                            grid-column-gap: 20px;
+                                .items{
+                                    // background-color: chartreuse;
+                                    background-color: $LightGrayishBlue;
+                                    border-radius: 10px;
+                                    .imgcont{
+                                        img{
+                                            width: 286px;
+                                            height: 200px;
+                                            border-top-left-radius: 10px;
+                                            border-top-right-radius: 10px;
+                                        }
+                                    }
+                                    .benifits{
+                                        // background-color: cyan;
+                                        width: 90%;
+                                        margin: auto;
+                                        // margin-top: 20px;
+                                        padding: 20px;
+                                            .personia{
+                                                @include opacity;
+                                                font-size: 15px;
+                                                margin: 0 0 20px 0;
+                                            }
+                                            a{
+                                                text-decoration: none;
+                                                .sdesc{
+                                                    color: black;
+                                                    font-weight: 500;
+                                                    font-size: 20px;
+                                                    margin-bottom: 20px;
+                                                    list-style-type: none;
+                                                        &:hover{
+                                                            color: $LimeGreen;
+                                                        }
+                                                }
+                                            }
+                                          
+                                            .description{
+                                                @include opacity;
+                                                font-size: 16px;
+                                            }
+                                    }
+                                }
+                        }
+                }
+                footer{
+                    background-color: $DarkBlue;
+                    padding: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    #footer1{
+                        display: flex;
+                        justify-content: space-around;
+                        // background-color: aqua;
+                        width: 700px;
+                        margin-left: -100px;
+                        div{
+                            margin-top: 10px;
+                            img{
+                                // filter: brightness(1);
+                                filter: invert(5);
+                                // margin-top: 10px;
+                            }
+                        }
+                        ul{
+                            a{
+                                text-decoration: none;
+                                li{
+                                    list-style-type: none;
+                                    color: white;
+                                    margin: 20px;
+                                        &:hover{
+                                            color: $LimeGreen;
+                                            transition: 0.5s;
+                                        }
+                                        &:not(:hover){
+                                            color: white;
+                                            transition: 0.5s;
+                                        }
+                                }
+                            }
+                            
+                        }
+                    }
+                    
+                    #footer2{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        // background-color: aqua;
+                            .button3{
+                                @include buttonstyle;
+                                margin-bottom: 20px;
+                                margin-right: 10px;
+                            }
+                            p{
+                                opacity: 0.7;
+                                color: white;
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+                    }
+                }
+                #socialmediahandeler{
+                    position: absolute;
+                    margin: -60px 0 0 90px;
+                    // width: 700px;
+                    // background-color: aqua;
+                        img{
+                            margin-left: 10px;
+                                &:hover{
+                                    filter:  grayscale(50%);
+                                    cursor: pointer;
+                                }
+                        }
+                }
+        }
+    }
+}
+
+
+  

@@ -1,0 +1,30 @@
+// @import '../colors/colors';
+
+@mixin  buttonstyle {
+    background-image: linear-gradient(to right, $LimeGreen , $BrightCyan);
+    border-radius: 100px;
+    padding: 12px 30px 12px 30px;
+    border: none;
+    color: white;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    &:not(:hover){
+        opacity: 1;
+        transition: 0.5s;
+        
+    }
+}
+
+@mixin flexforul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+@mixin opacity {
+    opacity: 0.7;
+}
+

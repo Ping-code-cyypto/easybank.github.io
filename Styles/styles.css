@@ -1,0 +1,469 @@
+@import url("https://fonts.google.com/specimen/Public+Sans");
+@media screen and (max-width: 1100px) {
+  body #dadofallcontainers .navbar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #dadofallcontainers .navbar #links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    position: absolute;
+    padding: 30px 300px;
+    margin-top: -350px;
+    z-index: 1;
+  }
+  body #dadofallcontainers .navbar #links li .litem:hover {
+    text-decoration: none;
+  }
+  body #dadofallcontainers .navbar .button {
+    display: none;
+  }
+  body #dadofallcontainers .navbar #ham {
+    display: block;
+  }
+  body #dadofallcontainers .navbar #ham:hover {
+    cursor: pointer;
+  }
+  body #dadofallcontainers .navbar #close {
+    display: none;
+  }
+  body #dadofallcontainers .navbar #close:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  body #ham img {
+    display: none;
+  }
+  body #close {
+    display: none;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'specimen', sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html body #dadofallcontainers {
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+html body #dadofallcontainers .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+html body #dadofallcontainers .navbar #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+html body #dadofallcontainers .navbar #links li {
+  margin: 10px;
+}
+
+html body #dadofallcontainers .navbar #links li a {
+  text-decoration: none;
+  color: #9698a6;
+  text-underline-offset: 30px;
+}
+
+html body #dadofallcontainers .navbar #links li a:hover {
+  color: black;
+  text-decoration: underline;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+html body #dadofallcontainers .navbar #links li a:not(:hover) {
+  color: #9698a6;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+html body #dadofallcontainers .navbar .button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 100px;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  color: white;
+}
+
+html body #dadofallcontainers .navbar .button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers .navbar .button:not(:hover) {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers #mainbody .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fafafa;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+html body #dadofallcontainers #mainbody .section1 .introinfo {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body #dadofallcontainers #mainbody .section1 .introinfo h1 {
+  width: 350px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+html body #dadofallcontainers #mainbody .section1 .introinfo p {
+  width: 400px;
+  font-size: 16px;
+  margin: 20px 0 20px 0;
+  opacity: 0.7;
+}
+
+html body #dadofallcontainers #mainbody .section1 .introinfo .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 100px;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  color: white;
+}
+
+html body #dadofallcontainers #mainbody .section1 .introinfo .button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers #mainbody .section1 .introinfo .button:not(:hover) {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers #mainbody .section1 #overflow {
+  margin-top: -200px;
+  margin-right: -330px;
+}
+
+html body #dadofallcontainers #mainbody .section1 #overflow2 {
+  position: absolute;
+  right: -100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: -100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+html body #dadofallcontainers #mainbody .section1 #overflow2 #overflowmobile {
+  right: 0;
+  top: 0;
+}
+
+html body #dadofallcontainers #section2 {
+  background-color: #f3f4f6;
+  padding: 70px 0 70px 0;
+}
+
+html body #dadofallcontainers #section2 .ninety {
+  width: 85%;
+  margin: auto;
+}
+
+html body #dadofallcontainers #section2 .ninety .intro {
+  width: 55%;
+}
+
+html body #dadofallcontainers #section2 .ninety .intro h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+html body #dadofallcontainers #section2 .ninety .intro p {
+  margin: 20px 0 70px 0;
+}
+
+html body #dadofallcontainers #section2 .ninety #featurecont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 15px;
+}
+
+html body #dadofallcontainers #section2 .ninety #featurecont div h3 {
+  margin: 20px 0 20px 0;
+  font-weight: 500;
+}
+
+html body #dadofallcontainers #section2 .ninety #featurecont div p {
+  opacity: 0.7;
+  line-height: 26px;
+}
+
+html body #dadofallcontainers #section3 {
+  width: 100%;
+  margin: 70px 0 70px 0;
+}
+
+html body #dadofallcontainers #section3 #seventy {
+  width: 85%;
+  margin: auto;
+}
+
+html body #dadofallcontainers #section3 .article {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+html body #dadofallcontainers #section3 .article p {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .imgcont img {
+  width: 286px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .benifits {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .benifits .personia {
+  opacity: 0.7;
+  font-size: 15px;
+  margin: 0 0 20px 0;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .benifits a {
+  text-decoration: none;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .benifits a .sdesc {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .benifits a .sdesc:hover {
+  color: #31d35c;
+}
+
+html body #dadofallcontainers #section3 .gridcontainer .items .benifits .description {
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+html body #dadofallcontainers footer {
+  background-color: #2d314d;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #dadofallcontainers footer #footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 700px;
+  margin-left: -100px;
+}
+
+html body #dadofallcontainers footer #footer1 div {
+  margin-top: 10px;
+}
+
+html body #dadofallcontainers footer #footer1 div img {
+  -webkit-filter: invert(5);
+          filter: invert(5);
+}
+
+html body #dadofallcontainers footer #footer1 ul a {
+  text-decoration: none;
+}
+
+html body #dadofallcontainers footer #footer1 ul a li {
+  list-style-type: none;
+  color: white;
+  margin: 20px;
+}
+
+html body #dadofallcontainers footer #footer1 ul a li:hover {
+  color: #31d35c;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers footer #footer1 ul a li:not(:hover) {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers footer #footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+html body #dadofallcontainers footer #footer2 .button3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 100px;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+html body #dadofallcontainers footer #footer2 .button3:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers footer #footer2 .button3:not(:hover) {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body #dadofallcontainers footer #footer2 p {
+  opacity: 0.7;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+html body #dadofallcontainers #socialmediahandeler {
+  position: absolute;
+  margin: -60px 0 0 90px;
+}
+
+html body #dadofallcontainers #socialmediahandeler img {
+  margin-left: 10px;
+}
+
+html body #dadofallcontainers #socialmediahandeler img:hover {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
