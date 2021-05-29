@@ -457,9 +457,27 @@ html body #dadofallcontainers #section3 .gridcontainer .items .benifits .descrip
   font-size: 16px;
 }
 
-html body #dadofallcontainers footer {
+html body #dadofallcontainers #footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #2d314d;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 30px;
+}
+
+html body #dadofallcontainers #footer div img {
+  -webkit-filter: invert(5);
+          filter: invert(5);
+  margin-left: -70px;
+  margin-top: 10px;
+}
+
+html body #dadofallcontainers #footer .ullist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,105 +486,74 @@ html body #dadofallcontainers footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style-type: none;
+  width: 30%;
+  margin-left: -150px;
 }
 
-html body #dadofallcontainers footer #footer1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 700px;
-  margin-left: -100px;
-}
-
-html body #dadofallcontainers footer #footer1 div {
-  margin-top: 10px;
-}
-
-html body #dadofallcontainers footer #footer1 div img {
-  -webkit-filter: invert(5);
-          filter: invert(5);
-}
-
-html body #dadofallcontainers footer #footer1 ul a {
+html body #dadofallcontainers #footer .ullist ul {
+  list-style-type: none;
   text-decoration: none;
 }
 
-html body #dadofallcontainers footer #footer1 ul a li {
-  list-style-type: none;
-  color: white;
-  margin: 20px;
+html body #dadofallcontainers #footer .ullist ul a {
+  text-decoration: none;
 }
 
-html body #dadofallcontainers footer #footer1 ul a li:hover {
+html body #dadofallcontainers #footer .ullist ul a li {
+  color: white;
+  margin: 13px 0 13px 0;
+}
+
+html body #dadofallcontainers #footer .ullist ul a li:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: #31d35c;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
-html body #dadofallcontainers footer #footer1 ul a li:not(:hover) {
+html body #dadofallcontainers #footer .ullist ul a li:not(:hover) {
   color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
-html body #dadofallcontainers footer #footer2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-html body #dadofallcontainers footer #footer2 .button3 {
+html body #dadofallcontainers #footer button {
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 100px;
   padding: 12px 30px 12px 30px;
   border: none;
   color: white;
-  margin-bottom: 20px;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
-html body #dadofallcontainers footer #footer2 .button3:hover {
+html body #dadofallcontainers #footer button:hover {
   cursor: pointer;
   opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-html body #dadofallcontainers footer #footer2 .button3:not(:hover) {
+html body #dadofallcontainers #footer button:not(:hover) {
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-html body #dadofallcontainers footer #footer2 p {
-  opacity: 0.7;
+html body #dadofallcontainers .patent {
+  position: absolute;
+  margin: -60px;
+  right: 220px;
   color: white;
-  font-weight: 400;
-  font-size: 16px;
+  opacity: 0.5;
 }
 
 html body #dadofallcontainers #socialmediahandeler {
   position: absolute;
-  margin: -60px 0 0 90px;
+  margin: -60px 0 0 80px;
 }
 
 html body #dadofallcontainers #socialmediahandeler img {
   margin-left: 10px;
-}
-
-html body #dadofallcontainers #socialmediahandeler img:hover {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

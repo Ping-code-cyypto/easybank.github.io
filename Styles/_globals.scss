@@ -1,7 +1,6 @@
 @import url('https://fonts.google.com/specimen/Public+Sans');
 @import '../mixins/repeatedcode';
 @import '../colors/colors';
-@import '../variables/variables';
 @import '../Responsiveness/mobileivew';
 @import '../Responsiveness/tablets';
 
@@ -207,74 +206,65 @@ html{
                                 }
                         }
                 }
-                footer{
-                    background-color: $DarkBlue;
-                    padding: 30px;
+                
+                #footer{
                     display: flex;
+                    background-color: $DarkBlue;
                     justify-content: space-around;
-                    align-items: center;
-                    #footer1{
-                        display: flex;
-                        justify-content: space-around;
-                        // background-color: aqua;
-                        width: 700px;
-                        margin-left: -100px;
-                        div{
-                            margin-top: 10px;
-                            img{
-                                // filter: brightness(1);
-                                filter: invert(5);
-                                // margin-top: 10px;
-                            }
+                    align-items: flex-start;
+                    padding: 30px;
+                    div{
+                        img{
+                            filter: invert(5);
+                            margin-left: -70px;
+                            margin-top: 10px
                         }
-                        ul{
-                            a{
-                                text-decoration: none;
-                                li{
+                    }
+                        .ullist{
+                            @include flexforul;
+                            // background-color: blanchedalmond;
+                            width: 30%;
+                            margin-left: -150px;
+                                ul{
                                     list-style-type: none;
-                                    color: white;
-                                    margin: 20px;
-                                        &:hover{
-                                            color: $LimeGreen;
-                                            transition: 0.5s;
-                                        }
-                                        &:not(:hover){
+                                    text-decoration: none;
+                                    a{
+                                        text-decoration: none;
+                                        li{
                                             color: white;
-                                            transition: 0.5s;
+                                            margin: 13px 0 13px 0;
+                                                &:hover{
+                                                    transition-duration: 0.5s;
+                                                    color: $LimeGreen;
+                                                }
+                                                &:not(:hover){
+                                                    color: white;
+                                                    transition-duration: 0.5s;
+                                                }
                                         }
+                                    }
+                                       
                                 }
-                            }
-                            
                         }
-                    }
-                    
-                    #footer2{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-                        // background-color: aqua;
-                            .button3{
-                                @include buttonstyle;
-                                margin-bottom: 20px;
-                                margin-right: 10px;
-                            }
-                            p{
-                                opacity: 0.7;
-                                color: white;
-                                font-weight: 400;
-                                font-size: 16px;
-                            }
-                    }
+                        button{
+                            @include buttonstyle;
+                            margin-top: 10px;
+                        }
+                } 
+                
+                .patent{
+                    position: absolute;
+                    margin: -60px;
+                    right: 220px;
+                    color: white;
+                    opacity: 0.5;
                 }
+
                 #socialmediahandeler{
                     position: absolute;
-                    margin: -60px 0 0 90px;
+                    margin: -60px 0 0 80px;
                         img{
                             margin-left: 10px;
-                                &:hover{
-                                    filter:  grayscale(50%);
-                                    cursor: pointer;
-                                }
                         }
                 }
         }
