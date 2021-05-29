@@ -37,6 +37,24 @@
   body #dadofallcontainers .navbar #close:hover {
     cursor: pointer;
   }
+  body #dadofallcontainers #section3 {
+    width: 100%;
+  }
+  body #dadofallcontainers #section3 #seventy {
+    overflow: hidden;
+  }
+  body #dadofallcontainers #section3 .gridcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #dadofallcontainers #section3 .gridcontainer .items {
+    margin-left: 1px;
+  }
 }
 
 @media screen and (min-width: 1099px) {
@@ -126,6 +144,7 @@ html body #dadofallcontainers .navbar .button {
   padding: 12px 30px 12px 30px;
   border: none;
   color: white;
+  margin-right: -300px;
 }
 
 html body #dadofallcontainers .navbar .button:hover {

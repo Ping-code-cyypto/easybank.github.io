@@ -53,6 +53,7 @@ html{
                     }
                     .button{
                         @include buttonstyle;
+                        margin-right: -300px;
                     }
                 }
 
@@ -144,18 +145,16 @@ html{
                 }
 
                 #section3{
-                    // background-color: blue;
                     width: 100%;
                     margin: 70px 0 70px 0;
                     #seventy{
                         width: 85%;
                         margin: auto;
-                        // background-color: brown;
+                        // background-color: blue;
+                        // height: fit-content;
                     }
                         .article{
                             width: fit-content;
-                            // background-color: blueviolet;
-                            
                                 p{
                                     font-size: 30px;
                                     margin-bottom: 50px;
@@ -272,8 +271,6 @@ html{
                 #socialmediahandeler{
                     position: absolute;
                     margin: -60px 0 0 90px;
-                    // width: 700px;
-                    // background-color: aqua;
                         img{
                             margin-left: 10px;
                                 &:hover{

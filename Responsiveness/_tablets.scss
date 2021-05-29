@@ -42,6 +42,25 @@
                     }
                     
                 }
+                #section3{
+                    width: 100%;
+                    // background-color: blue;
+                    #seventy{
+                        overflow: hidden;
+                        // background-color: brown;
+                        // text-align: center;
+                    }
+                        .gridcontainer{
+                            display: flex;
+                           flex-direction: column;
+                        //    text-align: center;
+                            .items{
+                                margin-left: 1px;
+                            }
+                        }
+                        
+
+                }
         }
     }
 }
