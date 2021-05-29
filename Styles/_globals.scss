@@ -146,6 +146,7 @@ html{
                 #section3{
                     width: 100%;
                     margin: 70px 0 70px 0;
+                    // background-color: crimson;
                     #seventy{
                         width: 85%;
                         margin: auto;
@@ -160,11 +161,9 @@ html{
                                 }
                         }
                         .gridcontainer{
-                            display: grid;
-                            grid-template-columns: auto auto auto auto;
+                            display: flex;
                             grid-column-gap: 20px;
                                 .items{
-                                    // background-color: chartreuse;
                                     background-color: $LightGrayishBlue;
                                     border-radius: 10px;
                                     .imgcont{

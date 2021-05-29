@@ -13,9 +13,10 @@
                         flex-direction: column;
                         background-color: white;
                         position: absolute;
-                        padding: 30px 300px ;
+                        padding: 30px 30px ;
                         margin-top: -350px;
                         z-index: 1;
+                        width: 80%;
                             li{ 
                                 .litem{
                                     // text-
@@ -45,18 +46,24 @@
                 #section3{
                     width: 100%;
                     // background-color: blue;
-                    #seventy{
-                        overflow: hidden;
-                        // background-color: brown;
-                        // text-align: center;
-                    }
+            
                         .gridcontainer{
                             display: flex;
                            flex-direction: column;
+                           justify-content: center;
+                           align-items: center;
+                           text-align: start;
+                           grid-row-gap: 20px;
                         //    text-align: center;
                             .items{
                                 margin-left: 1px;
                             }
+                        }
+                        .imgcont{
+                            text-align: center;
+                                img{
+                                    border-radius: 10px;
+                                }
                         }
                         
 

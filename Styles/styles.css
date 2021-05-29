@@ -3,6 +3,10 @@
   body #dadofallcontainers {
     width: 100%;
   }
+  body #dadofallcontainers .navbar #links {
+    width: 90%;
+    background-color: coral;
+  }
   body #dadofallcontainers #mainbody .section1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -85,9 +89,10 @@
             flex-direction: column;
     background-color: white;
     position: absolute;
-    padding: 30px 300px;
+    padding: 30px 30px;
     margin-top: -350px;
     z-index: 1;
+    width: 80%;
   }
   body #dadofallcontainers .navbar #links li .litem:hover {
     text-decoration: none;
@@ -110,9 +115,6 @@
   body #dadofallcontainers #section3 {
     width: 100%;
   }
-  body #dadofallcontainers #section3 #seventy {
-    overflow: hidden;
-  }
   body #dadofallcontainers #section3 .gridcontainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,9 +123,23 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+    grid-row-gap: 20px;
   }
   body #dadofallcontainers #section3 .gridcontainer .items {
     margin-left: 1px;
+  }
+  body #dadofallcontainers #section3 .imgcont {
+    text-align: center;
+  }
+  body #dadofallcontainers #section3 .imgcont img {
+    border-radius: 10px;
   }
 }
 
@@ -390,10 +406,9 @@ html body #dadofallcontainers #section3 .article p {
 }
 
 html body #dadofallcontainers #section3 .gridcontainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   grid-column-gap: 20px;
 }
 
