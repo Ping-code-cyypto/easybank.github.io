@@ -60,9 +60,50 @@
                             }
                     }
                 }
-                // #section3{
+                
+                    #footer{
+                        flex-direction: column;
+                        margin: 0;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding-bottom: 70px;
+                        #companylogo2{
+                            img{
+                                margin: 0;
+                            }
+                        }
+                        .ullist{
+                            margin: 0;
+                            flex-direction: column;
+                            margin-top: 50px;
+                            ul{
+                                margin: 0;
+                                    a{
+                                        li{
+                                            &:hover{
+                                                color: green;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                            }
+                        }
+                        #socialmediacontainer{
+                            top: 70px;
+                            left: auto;
+                            height: fit-content;
+                        }
+                        
+                        .patent{
+                            right: auto;
+                            bottom: 20px;
+                            
+                        }
 
-                // }
+                    }
+                   
+                    
             }
         }
       

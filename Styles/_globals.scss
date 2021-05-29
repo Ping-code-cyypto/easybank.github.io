@@ -29,6 +29,11 @@ html{
                     justify-content: space-around;
                     align-items: center;
                     margin: 20px;
+                    .logo{
+                        img{
+                            margin-top: 8px;
+                        }
+                    }
                     #links{
                         @include flexforul;
                             li{
@@ -194,7 +199,13 @@ html{
                                                     list-style-type: none;
                                                         &:hover{
                                                             color: $LimeGreen;
+                                                            transition-duration: 0.3s;
                                                         }
+                                                        &:not(:hover){
+                                                            color: black;
+                                                            transition-duration: 0.3s;
+                                                        }
+
                                                 }
                                             }
                                           
@@ -213,7 +224,8 @@ html{
                     justify-content: space-around;
                     align-items: flex-start;
                     padding: 30px;
-                    div{
+                    position: relative;
+                    #companylogo2{
                         img{
                             filter: invert(5);
                             margin-left: -70px;
@@ -250,23 +262,30 @@ html{
                             @include buttonstyle;
                             margin-top: 10px;
                         }
+
+                        .patent{
+                            position: absolute;
+                            right: 0;
+                        }
+        
+                        #socialmediacontainer{
+                            position: absolute;
+                            bottom: 40px;
+                            left: 80px;
+                                img{
+                                    margin-left: 10px;
+                                }
+                        }
+                        .patent{
+                            position: absolute;
+                            bottom: 40px;
+                            right: 160px;
+                            color: white;
+                            opacity: 0.5;
+                        }
                 } 
                 
-                .patent{
-                    position: absolute;
-                    margin: -60px;
-                    right: 220px;
-                    color: white;
-                    opacity: 0.5;
-                }
-
-                #socialmediahandeler{
-                    position: absolute;
-                    margin: -60px 0 0 80px;
-                        img{
-                            margin-left: 10px;
-                        }
-                }
+               
         }
     }
 }
