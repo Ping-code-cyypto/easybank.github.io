@@ -11,7 +11,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    background-color: aqua;
+    padding-bottom: 50px;
   }
   body #dadofallcontainers #mainbody .section1 #overflow {
     display: none;
@@ -43,6 +43,23 @@
   }
   body #dadofallcontainers #mainbody .section1 .introinfo .button {
     margin: auto;
+  }
+  body #dadofallcontainers #mainbody #section2 {
+    padding: 100px 0 50px 0;
+  }
+  body #dadofallcontainers #mainbody #section2 .intro {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  body #dadofallcontainers #mainbody #section2 #featurecont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #dadofallcontainers #mainbody #section2 #featurecont #features {
+    text-align: center;
   }
 }
 
@@ -335,10 +352,9 @@ html body #dadofallcontainers #section2 .ninety .intro p {
 }
 
 html body #dadofallcontainers #section2 .ninety #featurecont {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   grid-column-gap: 15px;
 }
 

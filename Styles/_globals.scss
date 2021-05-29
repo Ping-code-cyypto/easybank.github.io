@@ -126,8 +126,7 @@ html{
                                 }
                             
                                 #featurecont{
-                                    display: grid;
-                                    grid-template-columns: auto auto auto auto;
+                                    display: flex;
                                     grid-column-gap: 15px;
                                     div{
                                         h3{
