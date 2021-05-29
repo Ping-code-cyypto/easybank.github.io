@@ -1,3 +1,54 @@
 @media  screen and (max-width: 600px) {
-    
+    body{
+        #dadofallcontainers{
+            width: 100%;
+            // background-color: aqua;
+            #mainbody{
+                .section1{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    background-color: aqua;
+                        #overflow{
+                           display: none;
+                            img{
+                                width: 400px;
+                                height: 400px;
+                            }
+                        }
+                        #overflow2{
+                            left: 0;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: auto;
+                                }
+                        }
+                        #hiddendeskimg{
+                            width: 100%;
+                            margin: auto;
+                            // background-color: tomato;
+                                img{
+                                    width: 100%;
+                                }
+                        }
+                        .introinfo{
+                            text-align: center;
+                                h1{
+                                    margin: auto;
+                                }
+                                .button{
+                                    margin: auto;
+                                }
+                        }
+                }
+            }
+        }
+      
+    }
+}
+
+@media  screen and (min-width: 600px) {
+    #hiddendeskimg{
+        display: none;
+    }
 }
